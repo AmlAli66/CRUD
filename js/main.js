@@ -1,4 +1,4 @@
-//cruds create retrieve upadte delete search 
+
 var siteName = document.getElementById("siteName");
 var siteURL = document.getElementById("siteURL");
 var saveBtn = document.getElementById("saveBtn");
@@ -16,7 +16,7 @@ else {
 saveBtn.onclick = function () {
     if (validateSiteName() && validateSiteURL()) {
         addSiteFun();
-        // clearForm();
+        clearForm();
         display();
     } else {
         alert(`Site Name or Url is not valid, Please follow the rules below :
