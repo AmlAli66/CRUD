@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bookmark</title>
+  <link rel="icon" href="images/ic2.png">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/all.css">
+
+</head>
+
+<body>
+  <header class="pt-5">
+    <h1 class="text-center display-3 mx-auto  my-5 fw-bold">Bookmarker</h1>
+    <div class="container mt-2  rounded-2 mb-5 py-2 form-container w-50">
+
+      <h2 class="text-center special-header my-4"><i class="fas fa-bookmark px-2 fa-xs"></i>Bookmark your favorite sites
+        <i class="fas fa-bookmark fa-xs"></i>
+      </h2>
+      <div class="container w-75 ">
+        <form action="" class="">
+          <label for="siteName" class="my-1 fs-5"><i class="far fa-bookmark pe-2"></i>Site Name :</label>
+          <input type="text" id="siteName" class="form-control " minlength="3" placeholder="Bookmark Name">
+          <br>
+          <label for="siteURL" class="my-1 fs-5"><i class="fas fa-link pe-2"></i>Site URL :</label>
+          <input type="url" id="siteURL" class="form-control " placeholder="Website URL">
+          <button class="btn  my-5 py-2 px-5 d-block mx-auto  save-btn" type="button" id="saveBtn">Save</button>
+        </form>
+
+
+      </div>
+
+
+
+    </div>
+  </header>
+  <div class="container w-50">
+    <div class="row mb-5 ">
+      <div class="col-12 ">
+        <div
+          class="list-header d-flex bg-white bg-opacity-25 py-1 text-center  fs-5 border-bottom border-dark fw-bold ">
+          <div class="col-3">
+            <div class="index">
+              <p class="m-0">Index</p>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="site-name">
+              <p class=" m-0">Website Name</p>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="visit">
+              <p class=" m-0">Visit</p>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="delete">
+              <p class="m-0">Delete</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="listBody">
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>

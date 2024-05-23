@@ -1,0 +1,112 @@
+img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 0 .25rem #b4f2ec;
+    border-color: #268F8B;
+}
+
+.form-control {
+    border: 1px solid #DDD;
+}
+
+body {
+    /* background-color: #ffffff; */
+    background-image: url(../images/bgok.jpg);
+    background-size: cover;
+    background-position: right;
+    font-family: 'Times New Roman', Times, serif;
+    padding-bottom: 270px;
+}
+
+header {
+    /* height: 100vh; */
+}
+
+header label {
+    color: #196462;
+}
+
+h1 {
+    position: relative;
+    width: fit-content;
+    color: #1a6f6d;
+    font-style: italic
+}
+
+h1::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #c3e7de;
+    top: 52px;
+    z-index: -1;
+    width: 100%;
+    transition: all 0.4s;
+}
+
+h1:hover::after {
+    top: 30px;
+}
+
+.special-header {
+    background-image: linear-gradient(to right, #196462, #2de9d9);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.form-container {
+    background-color: #a0d6e0;
+}
+
+.visit-btn {
+    background-color: #078DA8;
+    color: rgb(255, 255, 255);
+}
+
+.visit-btn:hover {
+    border: 1px solid #078DA8;
+    color: #078DA8;
+
+}
+
+.delete-btn {
+    background-color: #dd4747;
+
+    color: rgb(255, 255, 255);
+
+}
+
+.delete-btn:hover {
+    border: 1px solid #dd4747;
+    background-color: #fff;
+    color: #dd4747;
+
+}
+
+.save-btn {
+    border: 1px solid #078DA8;
+    font-size: 22px;
+    color: #196462;
+}
+
+.save-btn:hover {
+    background-color: #078DA8;
+    color: #fff;
+
+}
+
+::selection {
+    background: rgb(145, 192, 193);
+}
+
+.list-header {
+    color: #22837E;
+}
+
+#listBody {
+    color: #526f74;
+}
